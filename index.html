@@ -1,0 +1,55 @@
+<html>
+
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    
+    <h1 >bookmarkere</h1><hr width="1000px" style="margin-left: 200px;"><h2 >bookmark is your favorite site</h2>
+    <div class="ahmed my-5 ">
+        <div>
+            <div>            <label  for="bookMarkName">site name</label>
+            </div>
+        <input type="text" style="width: 700px;height: 40px;" class="m-2 " type="text" id="bookMarkName" placeholder="bookmark name">
+        </div>
+        <div>
+            <div><label  for="bookMarkUrl">site url</label></div>
+
+            
+            <input oninput="validationurl" type="email" style="width: 700px; height: 40px;" class="m-2"type="text" id="bookMarkUrl" placeholder="site url"> 
+        <p id="massage" class="alert alert-danger d-none"> please enter the coorect url</p>
+          </div>
+        <div>     <button  onclick="submit()" class="bg-danger" id="ali">submit</button>
+
+
+
+        </div>
+    </div>
+    <hr width="1000px" style="margin-left: 200px;">
+  <table class="table text-center  ">
+    <thead  >
+        <tr >
+            <td>index</td>
+            <td>website Name</td>
+            <td><button class="m-0 border-0 bg-white" style="width: 100px;">visit</button></td>
+            <td><button  class="m-0 border-0 bg-white" style="width: 100px;">Delete</button></td>
+          
+           
+        </tr>
+    </thead>
+    <tbody id="display">
+
+    </tbody>
+</table>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
